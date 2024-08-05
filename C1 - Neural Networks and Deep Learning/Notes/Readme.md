@@ -72,7 +72,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - Single neuron == linear regression without applying activation(perceptron)
 - Basically a single neuron will calculate weighted sum of input(W.T*X) and then we can set a threshold to predict output in a perceptron. If weighted sum of input cross the threshold, perceptron fires and if not then perceptron doesn't predict.
 - Perceptron can take real values input or boolean values.
-- Actually, when w⋅x+b=0 the perceptron outputs 0.
+- Actually, when $w⋅x+b$=0 the perceptron outputs 0.
 - Disadvantage of perceptron is that it only output binary values and if we try to give small change in weight and bais then perceptron can flip the output. We need some system which can modify the output slightly according to small change in weight and bias. Here comes sigmoid function in picture.
 - If we change perceptron with a sigmoid function, then we can make slight change in output.
 - e.g. output in perceptron = 0, you slightly changed weight and bias, output becomes = 1 but actual output is 0.7. In case of sigmoid, output1 = 0, slight change in weight and bias, output = 0.7. 
@@ -149,10 +149,10 @@ Here are the course summary as its given on the course [link](https://www.course
 
 - Algorithm is used for classification algorithm of 2 classes.
 - Equations:
-  - Simple equation:	`y = wx + b`
-  - If x is a vector: `y = w(transpose)x + b`
-  - If we need y to be in between 0 and 1 (probability): `y = sigmoid(w(transpose)x + b)`
-  - In some notations this might be used: `y = sigmoid(w(transpose)x)`
+  - Simple equation:	`y = $wx + b$`
+  - If x is a vector: `y = $w(transpose)x + b$`
+  - If we need y to be in between 0 and 1 (probability): `y = $sigmoid(w(transpose)x + b)$`
+  - In some notations this might be used: `y = $sigmoid(w(A^{\mathrm{T}}x)$`
     - While `b` is `w0` of `w` and we add `x0 = 1`. but we won't use this notation in the course (Andrew said that the first notation is better).
 - In binary classification `Y` has to be between `0` and `1`.
 - In the last equation `w` is a vector of `Nx` and `b` is a real number
